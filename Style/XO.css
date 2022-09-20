@@ -10,11 +10,12 @@ body{
     align-items: center;
     background-color: #090e13;
     height: 100vh;
+    color: white;
 }
 
 .container{
     position: relative;
-    border: 1px rgb(255, 0, 0, 0.1) solid;
+    /* border: 1px rgb(255, 0, 0, 0.1) solid; */
     width: 350px;
     height: 351px;
     display: flex;
@@ -35,9 +36,16 @@ body{
 }
 
 .box{
-    border: 1px rgb(0, 128, 0, 0.1) solid;
+    border: 1px rgb(255, 0, 0, 0.1) solid;
     width: 100px;
     height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.box:hover{
+    background-color: rgba(90, 90, 90, 0.1);
 }
 
 .grid{
@@ -76,4 +84,3 @@ body{
     left: 82px;
     transform: rotate(90deg);
 }
-

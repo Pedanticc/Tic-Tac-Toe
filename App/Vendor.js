@@ -1,0 +1,1 @@
+const allBoxes = document.getElementsByClassName("box")
