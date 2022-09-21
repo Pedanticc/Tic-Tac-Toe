@@ -1,3 +1,8 @@
+@font-face {
+    src: url(./Fonts/RobotoMono-Light.ttf);
+    font-family: light;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,6 +10,7 @@
 }
 
 body{
+    font-family: light;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +42,11 @@ body{
 }
 
 .box{
-    border: 1px rgb(255, 0, 0, 0.1) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /* border: 1px rgb(255, 0, 0, 0.1) solid; */
     width: 100px;
     height: 100px;
     border-radius: 5px;
@@ -83,4 +93,12 @@ body{
     top: 0;
     left: 82px;
     transform: rotate(90deg);
+}
+
+.green-box{
+    color: #1D8348;
+}
+
+.golden-box{
+    color: #D4AC0D;
 }

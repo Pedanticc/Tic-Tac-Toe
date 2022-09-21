@@ -8,9 +8,20 @@ for (let i = 0; i < allBoxes.length; i++) {
 }
 
 function printBox(targert){
-    let printing =  ""
-    console.log("clicked")
-    if (XorO == "X"){printing = "X"; XorO = "O"}
-    else{printing = "O"; XorO = "X"}
-    targert.innerText = printing
+    if(targert.innerText == ""){
+        let printing =  ""
+        console.log("clicked")
+        if (XorO == "X"){printing = "X"; XorO = "O"; targert.classList.add("golden-box")}
+        else{printing = "O"; XorO = "X"; targert.classList.add("green-box")}
+        targert.innerText = printing
+    }
 }
+
+
+let list = [
+
+    "X", "O", "X",
+    "O", "X", "X",
+    "X", "O", "O",
+
+]
