@@ -1,5 +1,5 @@
-
 let XorO = "X"
+const checkBoxes = arr => arr.every(v => v === arr[0])
 
 // --- Event listener for all boxes
 // --- Used the Target algo here. The func knows exactly where to print the symbol. Passed the element as a parameter.
@@ -18,10 +18,6 @@ function printBox(targert){
 }
 
 
-let list = [
-
-    "X", "O", "X",
-    "O", "X", "X",
-    "X", "O", "O",
-
-]
+for (let i = 0; i < allZ2Boxes.length; i++) {
+    allZ2Boxes[i].style.border = "5px red solid"
+}
