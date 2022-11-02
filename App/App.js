@@ -1,4 +1,8 @@
 let XorO = "X"
+const allPossibleDirection = [allRow1Boxes, allRow2Boxes, allRow3Boxes,
+                              allColumn1Boxes, allColumn2Boxes, allColumn3Boxes,
+                              allZ1Boxes, allZ2Boxes]
+
 const checkBoxes = arr => arr.every(v => v === arr[0])
 
 // --- Event listener for all boxes
@@ -18,6 +22,6 @@ function printBox(targert){
 }
 
 
-for (let i = 0; i < allZ2Boxes.length; i++) {
-    allZ2Boxes[i].style.border = "5px red solid"
-}
+// for (let i = 0; i < 3; i++) {
+//     allRow3Boxes[i].style.border = "5px red solid"
+// }
