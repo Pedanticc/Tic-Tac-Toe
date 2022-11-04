@@ -36,7 +36,7 @@ body{
     top: 0.5rem;
     display: flex;
     transition: 500ms;
-    
+    cursor: default;
 }
 
 .side{
@@ -45,6 +45,7 @@ body{
     /* border: 1px blue solid; */
     width: 50%;
     align-items: center;
+    position: relative;
 }
 
 .symbol{
@@ -60,6 +61,7 @@ body{
     font-size: 20px;
     color: rgb(220, 20, 60, 0.8);
     text-shadow: rgb(220, 20, 60, 0.8) 1px 0 4px;
+    transition: 500ms;
 }
 
 .symbol-x{
@@ -70,6 +72,49 @@ body{
 .symbol-o{
     color: rgb(49, 102, 89);
     font-weight: 999
+}
+
+.border-dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-color: #090e13;
+}
+
+.border-dot-2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -5px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-color: #090e13;
+}
+
+.lead{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: rgb(172, 146, 0);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px gold);
+    display: none;
+    transition: 500ms;
+}
+
+.lead-x{
+    right: 4px;
+    top: 5px;
+}
+
+.lead-o{
+    left: 4px;
+    top: 5px;
 }
 
 .container{
@@ -197,6 +242,7 @@ body{
 .turn{
     position: absolute;
     left: -40px;
+    cursor: default;
 }
 
 .turns{

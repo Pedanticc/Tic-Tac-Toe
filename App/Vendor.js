@@ -20,3 +20,6 @@ const restartButton = document.getElementById("restart")
 // ------
 const xPoints = document.getElementById("x-points")
 const oPoints = document.getElementById("o-points")
+// ------
+const leadX = document.getElementById("lead-x")
+const leadO = document.getElementById("lead-o")

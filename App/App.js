@@ -53,6 +53,7 @@ function checkGame(){
 
 async function win(target){
     game_win = true
+    let winner = target[0].innerText
     restartButton.style.pointerEvents = "auto"
     container.style.pointerEvents = "none"
     for (let i = 0; i < 3; i++){
@@ -61,6 +62,36 @@ async function win(target){
         target[i].style.backgroundColor = "rgb(0, 0, 0, 0.5)"
     }
     restartButton.style.bottom = "-150px"
+
+    console.log(xPoints.innerText)
+    
+    switch (winner){
+        case "X":
+            console.log("here")
+            xPoints.innerText = Number(xPoints.innerText) + 1
+            break
+        case "O":
+            oPoints.innerText = Number(oPoints.innerText) + 1
+            break
+    }
+
+    if (Number(xPoints.innerText) > Number(oPoints.innerText)){
+        leadX.style.display = "block"
+        leadO.style.display = "none"
+    }
+    else if (Number(xPoints.innerText) < Number(oPoints.innerText)){
+        leadO.style.display = "block"
+        leadX.style.display = "none"
+    }
+
+    else if (Number(xPoints.innerText) == Number(oPoints.innerText)){
+        leadO.style.display = "none"
+        leadX.style.display = "none"
+    }
+
+    else{
+
+    }
 }
 
 function draw(){
