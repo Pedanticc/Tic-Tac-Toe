@@ -3,6 +3,12 @@
     font-family: light;
 }
 
+@font-face {
+    src: url(./Fonts/RobotoMono-Bold.ttf);
+    font-family: bold;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -17,9 +23,57 @@ body{
     background-color: #090e13;
     height: 100vh;
     color: white;
+    overflow: hidden;
+}
+
+
+.score-board{
+    position: absolute;
+    width: 170px;
+    height: 65px;
+    border: 1px rgb(33, 69, 60) solid;
+    right: 0.5rem;
+    top: 0.5rem;
+    display: flex;
+    transition: 500ms;
+    
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px blue solid; */
+    width: 50%;
+    align-items: center;
+}
+
+.symbol{
+    font-family: light;
+    font-size: 20px;
+    margin-top: 3px;
+    text-shadow: rgb(49, 102, 89) 1px 0 10px;
+}
+
+.points{
+    font-family: bold;
+    margin-top: 2px;
+    font-size: 20px;
+    color: rgb(220, 20, 60, 0.8);
+    text-shadow: rgb(220, 20, 60, 0.8) 1px 0 4px;
+}
+
+.symbol-x{
+    color: rgb(49, 102, 89);
+    font-weight: 999
+}
+
+.symbol-o{
+    color: rgb(49, 102, 89);
+    font-weight: 999
 }
 
 .container{
+    position: relative;
     margin: auto;
     position: relative;
     /* border: 1px rgb(255, 0, 0, 0.1) solid; */
@@ -28,8 +82,8 @@ body{
     display: flex;
     flex-direction: column;
     height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
-
 
 .row{
     /* border: 1px red solid; */
@@ -104,4 +158,58 @@ body{
 .golden-box{
     transition: 100ms;
     color: #D4AC0D;
+}
+
+.game-restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #17202A;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    /* -100px */
+    bottom: -300px; 
+    cursor: pointer;
+    transition: 500ms;
+    border: 1px rgb(0, 0, 0) solid;
+}
+
+.game-restart:hover .restart-svg{
+    transform: rotate(360deg);
+}
+
+.game-restart:hover{
+    border: 1px crimson solid;
+    background-color: #27323f;
+}
+
+.restart-svg{
+    width: 40px;
+    height: 40px;
+    transition: 600ms;
+}
+
+.turn{
+    position: absolute;
+    left: -40px;
+}
+
+.turns{
+    border: 1px rgb(27, 27, 27, 0.8) solid;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    transition: 500ms;
+}
+
+.your-turn{
+    border-bottom: 1px gold solid;
+}
+
+.game-over{
+    border-bottom: 1px red solid;
 }
