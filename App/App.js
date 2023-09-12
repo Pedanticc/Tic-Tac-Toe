@@ -13,10 +13,10 @@ let game_draw = false
 // --- Event listener for all boxes
 // --- Used the Target algo here. The func knows exactly where to print the symbol. Passed the element as a parameter.
 for (let i = 0; i < allBoxes.length; i++) {
-    allBoxes[i].addEventListener('click', function() {printBox(allBoxes[i]), false} );
+    allBoxes[i].addEventListener('click', function() {printBox(allBoxes[i]), false} )
 }
 
-restartButton.addEventListener('click', function() {restartGame()} );
+restartButton.addEventListener('click', function() {restartGame()} )
 
 function printBox(targert){
     if(targert.innerText == ""){
@@ -61,7 +61,8 @@ async function win(target){
         target[i].style.transition = "300ms"
         target[i].style.backgroundColor = "rgb(0, 0, 0, 0.5)"
     }
-    restartButton.style.bottom = "-150px"
+    restartButton.style.opacity = "100%"
+    restartButton.style.bottom = "-75px"
 
     console.log(xPoints.innerText)
     
@@ -99,7 +100,8 @@ function draw(){
     game_draw = true
     restartButton.style.pointerEvents = "auto"
     container.style.pointerEvents = "none"
-    restartButton.style.bottom = "-150px"
+    restartButton.style.opacity = "100%"
+    restartButton.style.bottom = "-75px"
 }
 
 

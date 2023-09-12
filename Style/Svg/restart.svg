@@ -5,7 +5,7 @@
      xmlns:svg="http://www.w3.org/2000/svg"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="128" height="128" version="1.1">
+     width="128" height="128" version="1.1" fill="white">
     <title>Reboot Icon</title>
     <desc>This is shape (source) for Clarity vector icon theme for gtk</desc>
     <metadata>

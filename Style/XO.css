@@ -24,6 +24,8 @@ body{
     height: 100vh;
     color: white;
     overflow: hidden;
+    min-height: 550px;
+    min-width: 500px;
 }
 
 
@@ -120,7 +122,6 @@ body{
 .container{
     position: relative;
     margin: auto;
-    position: relative;
     /* border: 1px rgb(255, 0, 0, 0.1) solid; */
     width: 350px;
     height: 351px;
@@ -218,10 +219,11 @@ body{
     right: 0;
     left: 0;
     /* -100px */
-    bottom: -300px; 
+    bottom: -75px; 
     cursor: pointer;
     transition: 500ms;
     border: 1px rgb(0, 0, 0) solid;
+    opacity: 0%;
 }
 
 .game-restart:hover .restart-svg{
